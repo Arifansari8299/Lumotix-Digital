@@ -1,0 +1,17 @@
+# Ignore server-side dependencies and env
+server/node_modules/
+**/node_modules/
+server/.env
+
+# Ignore client-side dependencies and env
+client/node_modules/
+client/.env
+
+# Ignore all .env files anywhere (for extra safety)
+**/.env
+
+# Optional: ignore lockfiles or logs (customize as needed)
+*.log
+npm-debug.log*
+yarn-error.log*
+.DS_Store
