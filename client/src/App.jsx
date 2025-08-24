@@ -1,9 +1,16 @@
-import React from 'react'
-function App(){
-  return(
-    <div className='min-h-screen bg-amber-100 flex items-center justify-center'>
-      <h2 className='text-3xl font-bold'>App</h2>
+import Navbar from "./components/Navbar";
+import ServicesCard from "./components/ServicesCard";
+
+export default function App() {
+  return (
+    <div>
+      <Navbar />
+      <div className="pt-16"> {/* navbar height fix */}
+        <section id="home" className="h-screen flex items-center justify-center">
+          <h1 className="text-4xl font-bold">Welcome to MyApp 🚀</h1>
+        </section>
+        <ServicesCard />
+      </div>
     </div>
-  )
+  );
 }
-export default App;
